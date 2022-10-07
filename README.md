@@ -1,6 +1,6 @@
 
 ### Zonulet / ZONU
-- [x] [0x7E5F5D463D0888ad531Cd9b425AC575992C0170C](https://explorer.harmony.one/address/0x7E5F5D463D0888ad531Cd9b425AC575992C0170C)
+- [x] [0xA499cE35fc84C6EA6ACb1F8864C4D9F975B306bd](https://explorer.harmony.one/address/0xA499cE35fc84C6EA6ACb1F8864C4D9F975B306bd)
 
 ### ZonuDex / ZDEX
 - [x] [0xd91e528577e1Caf2edb60d86ae2AFaEeF405E3F6](https://explorer.harmony.one/address/0xd91e528577e1Caf2edb60d86ae2AFaEeF405E3F6)
