@@ -27,7 +27,7 @@ interface IERC165 {
 
 // File: src/openzeppelin/token/ERC721/IERC721.sol
 
-
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -157,7 +157,7 @@ interface IERC721 is IERC165 {
 
 // File: src/openzeppelin/token/ERC721/IERC721Receiver.sol
 
-
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -181,7 +181,7 @@ interface IERC721Receiver {
 
 // File: src/openzeppelin/token/ERC721/extensions/IERC721Metadata.sol
 
-
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -209,7 +209,7 @@ interface IERC721Metadata {
 
 // File: src/openzeppelin/utils/Address.sol
 
-
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -401,7 +401,7 @@ library Address {
 
 // File: src/openzeppelin/utils/Context.sol
 
-
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -428,7 +428,7 @@ abstract contract Context {
 
 // File: src/openzeppelin/utils/Strings.sol
 
-
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -498,7 +498,7 @@ library Strings {
 
 // File: src/openzeppelin/utils/introspection/ERC165.sol
 
-
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -527,7 +527,7 @@ abstract contract ERC165 is IERC165 {
 
 // File: src/openzeppelin/token/ERC721/ERC721.sol
 
-
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -904,7 +904,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
 
 // File: src/openzeppelin/token/ERC721/extensions/IERC721Enumerable.sol
 
-
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -934,7 +934,7 @@ interface IERC721Enumerable {
 
 // File: src/openzeppelin/token/ERC721/extensions/ERC721Full.sol
 
-
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -1158,7 +1158,7 @@ abstract contract ERC721Full is ERC721, IERC721Enumerable {
 // ███████╗╚██████╔╝██║ ╚████║╚██████╔╝███████╗███████╗   ██║   
 // ╚══════╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝   ╚═╝                                                              
 // zonulet.io
-
+// SPDX-License-Identifier: MIT
 
 pragma solidity >0.5.0;
 
@@ -1168,7 +1168,7 @@ contract ZonuletNFT is IERC721Metadata, ERC721Full{
   struct metadata { 
   string name;
   string mimeType;
-  string nftData;
+  string filecoinData;
   string category;
   string description;
   string url;
@@ -1194,13 +1194,13 @@ contract ZonuletNFT is IERC721Metadata, ERC721Full{
 
   constructor() ERC721("ZonuletNFT", "ZonuNFT") public {}
 
-  function mint(string memory _name, string memory _mimeType, string memory _nftData, string memory _category, string memory _description, string memory _url, uint _price) public returns (uint){
+  function mint(string memory _name, string memory _mimeType, string memory _filecoinData, string memory _category, string memory _description, string memory _url, uint _price) public returns (uint){
     require(!_imageExists[_name]);
 
     metadata memory md;
     md.name = _name;
     md.mimeType = _mimeType;
-    md.nftData = _nftData;
+    md.filecoinData = _filecoinData;
     md.category = _category;
     md.description = _description;
     md.url = _url;
