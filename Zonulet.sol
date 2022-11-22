@@ -1327,7 +1327,7 @@ contract Zonulet is ERC20, Ownable {
     	dividendTracker = new ZonuletDividendTracker();
 
 
-    	IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xeaBAAc727B09427bd2bECb7576D045d8365f0346); // use ZonuDex router 
+    	IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xeaBAAc727B09427bd2bECb7576D045d8365f0346); // use ZonuDex/DexSwap router 
          // Create a uniswap pair for this new token
         address _uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
             .createPair(address(this), _uniswapV2Router.WETH());
